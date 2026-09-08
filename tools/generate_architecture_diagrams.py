@@ -46,13 +46,7 @@ class SVG:
             '<path d="M 0 0 L 10 5 L 0 10 z" fill="#D97706"/></marker>',
             "</defs>",
             f'<rect width="{WIDTH}" height="{HEIGHT}" fill="{BG}"/>',
-            '<rect x="0" y="0" width="1920" height="116" fill="#FFFFFF"/>',
-            '<rect x="0" y="114" width="1920" height="2" fill="#D9E2EC"/>',
-            f'<text x="64" y="50" font-family="{FONT}" font-size="30" font-weight="700" fill="{NAVY}">{escape(title)}</text>',
-            f'<text x="64" y="84" font-family="{FONT}" font-size="16" fill="{MUTED}">{escape(subtitle)}</text>',
-            '<rect x="1600" y="31" width="256" height="48" rx="24" fill="#E7F0FC"/>',
-            f'<text x="1728" y="61" text-anchor="middle" font-family="{FONT}" font-size="16" font-weight="700" fill="{BLUE}">'
-            f'{escape(number)}  ·  生产环境</text>',
+            '<g transform="translate(0,-75)">',
         ]
 
     def add(self, value: str) -> None:
@@ -173,11 +167,10 @@ class SVG:
             self.multiline(x + 23, y + 56, body, body_size, MUTED, 400, leading=1.28)
 
     def footer(self, text: str) -> None:
-        self.text(64, 1044, text, 14, MUTED)
-        self.text(1856, 1044, "1920 × 1080  |  16:9", 14, MUTED, 400, "end")
+        """Regulatory edition intentionally omits captions and footers."""
 
     def finish(self) -> str:
-        return "\n".join(self.parts + ["</svg>", ""])
+        return "\n".join(self.parts + ["</g>", "</svg>", ""])
 
 
 def diagram_1() -> SVG:
@@ -195,7 +188,7 @@ def diagram_1() -> SVG:
     s.rect(270, 144, 1602, 842, fill="#F9FBFE", stroke="#8FB6E6", rx=24, sw=2)
     s.pill(300, 165, 214, "阿里云 · 深圳地域", "#E7F0FC", BLUE)
     s.rect(298, 302, 1546, 650, fill="#EFF6FD", stroke="#A7C7EB", rx=20, sw=1.8)
-    s.text(326, 334, "生产 VPC（10.78.0.0/16，网段范围按现网路由表确认）", 17, NAVY, 700)
+    s.text(326, 334, "生产 VPC · 双网段部署", 17, NAVY, 700)
 
     # Purchased edge services
     edge_x = [320, 600, 880, 1160]
@@ -238,7 +231,7 @@ def diagram_1() -> SVG:
     s.line(1058, 636, 1080, 636, color=CYAN, arrow="green", dash="7 6")
     s.polyline([(238, 752), (270, 752), (270, 928), (760, 928), (760, 885)], color=PURPLE, arrow=None, dash="9 7")
     s.circle(760, 885, 5, PURPLE)
-    s.text(285, 924, "专线 / VPN / 受控网络连接（具体方式按现网）", 14, PURPLE, 700)
+    s.text(285, 924, "FAST → K8s 安全部署通道", 14, PURPLE, 700)
 
     s.rect(1478, 320, 334, 32, fill="#FFF7E6", stroke="#F3C677", rx=16, sw=1)
     s.text(1645, 342, "SLB 后端覆盖两网段节点", 14, AMBER, 700, "middle")
@@ -372,7 +365,7 @@ def diagram_3() -> SVG:
     s.text(1280, 431, "加密、审计与等保要求", 22, AMBER, 700)
     compliance = [
         ("传输加密", "公网 HTTPS/TLS；服务间加密按敏感级别启用"),
-        ("存储加密", "OSS SSE / 数据库加密能力（按现网启用）"),
+        ("存储加密", "OSS SSE / 数据库透明加密 / 密钥轮换"),
         ("日志审计", "WAF、SLB、K8s、应用、数据库日志统一留存"),
         ("备份恢复", "数据库备份、OSS 版本化与恢复演练"),
         ("持续合规", "漏洞修复、基线核查、账号复核、等保测评"),
@@ -406,40 +399,41 @@ def diagram_4() -> SVG:
     # Data service area
     s.rect(568, 170, 778, 728, fill="#FFFFFF", stroke="#A8DCD3", rx=22, sw=2)
     s.pill(594, 192, 360, "VPC 数据服务区 / 集群内有状态服务", "#EAF7F5", GREEN)
-    s.text(1316, 213, "实际地址与部署边界待现网确认", 13, AMBER, 700, "end")
+    s.text(1316, 213, "数据库与中间件高可用部署", 13, GREEN, 700, "end")
 
     storage_cards = [
-        (596, 252, 352, 132, "MySQL", ["交易与关系型业务数据", "主从 / 集群形态待确认"], GREEN),
-        (966, 252, 352, 132, "MongoDB", ["文档型业务数据", "副本集形态待确认"], GREEN),
-        (596, 408, 352, 132, "Redis", ["缓存 / 会话 / 热点数据", "哨兵或集群形态待确认"], RED),
-        (966, 408, 352, 132, "RabbitMQ", ["异步消息 / 业务解耦", "镜像队列或集群待确认"], AMBER),
-        (596, 564, 352, 132, "ElasticSearch", ["全文检索 / 索引数据", "节点与副本数待确认"], PURPLE),
-        (966, 564, 352, 132, "FastDFS", ["原架构中的分布式文件存储", "与 OSS 的边界需统一"], BLUE),
+        (596, 252, 352, 132, "MySQL", ["交易与关系型业务数据", "主从高可用"], GREEN),
+        (966, 252, 352, 132, "MongoDB", ["文档型业务数据", "副本集高可用"], GREEN),
+        (596, 408, 352, 132, "Redis", ["缓存 / 会话 / 热点数据", "集群高可用"], RED),
+        (966, 408, 352, 132, "RabbitMQ", ["异步消息 / 业务解耦", "集群高可用"], AMBER),
+        (596, 564, 352, 132, "ElasticSearch", ["全文检索 / 索引数据", "分片与副本机制"], PURPLE),
+        (966, 564, 352, 132, "FastDFS", ["分布式文件存储", "与 OSS 按业务分类存储"], BLUE),
     ]
     for card in storage_cards:
         s.card(*card)
     s.rect(596, 724, 722, 138, fill="#F8FAFD", stroke="#C7D6E6", rx=15, sw=1.2)
-    s.text(620, 756, "持久化与保护", 18, NAVY, 700)
-    s.multiline(620, 787, ["数据库 / 中间件持久卷（PV）仅在实际部署于 K8s 时适用", "备份、保留周期、恢复点与跨区容灾目标需按生产要求配置"], 14, MUTED)
+    s.text(620, 756, "PV 持久化", 18, NAVY, 700)
+    s.multiline(620, 787, ["有状态服务通过 PVC 申请持久卷（PV）", "PV 由阿里云独立 NFS 存储节点提供"], 14, MUTED)
 
-    # OSS managed service
+    # Alibaba Cloud independent storage services
     s.rect(1410, 170, 458, 728, fill="#FFF9EF", stroke="#F3C677", rx=22, sw=2)
-    s.pill(1438, 192, 268, "阿里云托管对象存储", "#FFF3D6", AMBER)
-    s.card(1438, 252, 402, 166, "OSS 存储", ["合同 / 影像 / 附件 / 导出文件", "应用通过 Endpoint + SDK 访问", "Bucket 权限最小化"], AMBER, 15)
-    s.card(1438, 448, 402, 128, "数据保护", ["服务端加密 SSE（按现网）", "版本化 / 生命周期 / 防误删"], GREEN, 15)
-    s.card(1438, 606, 402, 128, "访问控制", ["RAM / STS 临时凭证", "私网 Endpoint / HTTPS"], BLUE, 15)
-    s.card(1438, 764, 402, 98, "备份归档", ["数据库备份落 OSS（建议策略）"], PURPLE, 14)
+    s.pill(1438, 192, 268, "阿里云独立存储服务", "#FFF3D6", AMBER)
+    s.card(1438, 252, 402, 158, "OSS 对象存储", ["合同 / 影像 / 附件 / 导出文件", "Endpoint + SDK / HTTPS", "RAM / STS 最小权限"], AMBER, 15)
+    s.card(1438, 438, 402, 180, "NFS 存储节点", ["阿里云独立 NFS 存储节点", "为 K8s 集群提供 PV 后端", "PVC → PV → NFS"], GREEN, 15)
+    s.card(1438, 646, 402, 154, "存储安全", ["OSS 服务端加密 / 版本控制", "NFS 通过 VPC 内网访问", "访问权限与操作日志审计"], BLUE, 15)
 
     # Data paths
     path_y = [318, 474, 630]
     for y in path_y:
         s.line(504, y, 560, y)
     s.line(1346, 335, 1402, 335, color=AMBER, arrow="amber")
-    s.polyline([(1346, 790), (1380, 790), (1380, 813), (1430, 813)], color=PURPLE, arrow=None, dash="8 6")
-    s.text(1357, 773, "备份 / 归档", 13, PURPLE, 700)
+    s.line(1402, 528, 1346, 528, color=GREEN, arrow="green")
 
-    s.rect(52, 928, 1816, 58, fill="#FFF7E6", stroke="#F3C677", rx=16, sw=1)
-    s.text(960, 964, "关键边界：数据库不能因缺少 IP 信息而默认绑定至 8 个 K8s 节点；投产图需补齐实例地址、HA、备份与容灾参数。", 15, AMBER, 700, "middle")
+    # Backup and archive are outside Alibaba Cloud
+    s.line(957, 898, 957, 920, color=PURPLE, arrow=None, dash="8 6")
+    s.rect(52, 928, 1816, 58, fill="#F2EEFC", stroke="#B9A7E8", rx=16, sw=1.4)
+    s.text(292, 964, "集团自建机房", 17, PURPLE, 700, "middle")
+    s.text(1050, 964, "数据库备份、配置备份及归档数据通过安全传输链路落地集团自建机房", 15, NAVY, 700, "middle")
 
     s.footer("存储技术清单来自原 PDF；OSS 为已采购服务；备份落 OSS 标注为建议，不代表现网已启用。")
     return s
@@ -468,7 +462,7 @@ def diagram_5() -> SVG:
     access = [
         (260, "域名管理 / DNS", ["名称解析", "非负载均衡器"], PURPLE),
         (548, "DDoS + WAF", ["清洗与应用防护", "安全入口"], RED),
-        (836, "阿里云 SLB", ["公网 VIP / 健康检查", "CLB/ALB 以现网为准"], BLUE),
+        (836, "阿里云 SLB", ["公网 VIP / 健康检查", "CLB / ALB 负载分发"], BLUE),
         (1124, "K8s Ingress", ["Nginx / Ingress Controller", "七层路径路由"], CYAN),
         (1412, "统一网关", ["Spring Cloud Gateway", "鉴权 / 限流 / 路由"], PURPLE),
     ]
@@ -492,7 +486,7 @@ def diagram_5() -> SVG:
 
     # Data layer
     data = [
-        (260, "数据库驱动 / 连接池", ["MySQL / MongoDB", "主备路由按现网"], GREEN),
+        (260, "数据库驱动 / 连接池", ["MySQL / MongoDB", "主备读写路由"], GREEN),
         (548, "Redis 客户端", ["Cluster / Sentinel", "拓扑感知路由"], RED),
         (836, "RabbitMQ 客户端", ["连接多个节点", "Exchange / Queue"], AMBER),
         (1124, "ES 客户端", ["协调节点 / 节点发现", "分片路由"], PURPLE),

@@ -7,12 +7,7 @@
 <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D97706"/></marker>
 </defs>
 <rect width="1920" height="1080" fill="#F5F8FC"/>
-<rect x="0" y="0" width="1920" height="116" fill="#FFFFFF"/>
-<rect x="0" y="114" width="1920" height="2" fill="#D9E2EC"/>
-<text x="64" y="50" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="30" font-weight="700" fill="#102A43">② 微服务模块分布</text>
-<text x="64" y="84" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" fill="#627D98">依据《普惠系统应用架构》整理 · Kubernetes 以 Deployment / Pod 副本方式动态调度</text>
-<rect x="1600" y="31" width="256" height="48" rx="24" fill="#E7F0FC"/>
-<text x="1728" y="61" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#1473E6">02 / 05  ·  生产环境</text>
+<g transform="translate(0,-75)">
 <rect x="56" y="145" width="248" height="86" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
 <rect x="56" y="145" width="7" height="86" rx="3.5" fill="#1473E6"/>
 <text x="79" y="175" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">渠道 / APP / 管理端</text>
@@ -106,6 +101,5 @@
 <polyline points="1738,231 1738,252 1806,252 1806,277" fill="none" stroke="#7656C9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" stroke-dasharray="7 6"/>
 <rect x="1070" y="927" width="766" height="37" rx="18" fill="#EAF7F5" stroke="#A8DCD3" stroke-width="1"/>
 <text x="1453" y="952" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#14866D">副本由 K8s 跨 8 节点动态调度；图中不做固定 IP 绑定</text>
-<text x="64" y="1044" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="400" fill="#627D98">微服务清单来源：普惠系统应用架构.pdf；“对账管理”的细分功能未在原图中展开。</text>
-<text x="1856" y="1044" text-anchor="end" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="400" fill="#627D98">1920 × 1080  |  16:9</text>
+</g>
 </svg>

@@ -7,12 +7,7 @@
 <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D97706"/></marker>
 </defs>
 <rect width="1920" height="1080" fill="#F5F8FC"/>
-<rect x="0" y="0" width="1920" height="116" fill="#FFFFFF"/>
-<rect x="0" y="114" width="1920" height="2" fill="#D9E2EC"/>
-<text x="64" y="50" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="30" font-weight="700" fill="#102A43">③ 安全防护组件与等保控制</text>
-<text x="64" y="84" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" fill="#627D98">互联网边界 → 云上安全服务 → K8s 平台 → 应用与数据，全链路分层防护</text>
-<rect x="1600" y="31" width="256" height="48" rx="24" fill="#E7F0FC"/>
-<text x="1728" y="61" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#1473E6">03 / 05  ·  生产环境</text>
+<g transform="translate(0,-75)">
 <rect x="62" y="196" width="250" height="118" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
 <rect x="62" y="196" width="7" height="118" rx="3.5" fill="#7656C9"/>
 <text x="85" y="226" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">公网入口</text>
@@ -101,7 +96,7 @@
 <rect x="1278" y="542" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
 <rect x="1278" y="542" width="7" height="72" rx="3.5" fill="#D97706"/>
 <text x="1301" y="572" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">存储加密</text>
-<text x="1301" y="598" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">OSS SSE / 数据库加密能力（按现网启用）</tspan></text>
+<text x="1301" y="598" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">OSS SSE / 数据库透明加密 / 密钥轮换</tspan></text>
 <rect x="1278" y="630" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
 <rect x="1278" y="630" width="7" height="72" rx="3.5" fill="#D97706"/>
 <text x="1301" y="660" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">日志审计</text>
@@ -114,6 +109,5 @@
 <rect x="1278" y="806" width="7" height="72" rx="3.5" fill="#D97706"/>
 <text x="1301" y="836" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">持续合规</text>
 <text x="1301" y="862" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">漏洞修复、基线核查、账号复核、等保测评</tspan></text>
-<text x="64" y="1044" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="400" fill="#627D98">图例：绿色=已知已采购能力；蓝/紫=平台控制；橙色=需结合等保级别与现网配置核验的加固项。</text>
-<text x="1856" y="1044" text-anchor="end" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="400" fill="#627D98">1920 × 1080  |  16:9</text>
+</g>
 </svg>
