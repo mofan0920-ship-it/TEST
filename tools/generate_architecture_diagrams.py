@@ -303,8 +303,6 @@ def diagram_2() -> SVG:
     # Scheduling note and links
     s.line(490, 231, 490, 360)
     s.polyline([(1738, 231), (1738, 252), (1806, 252), (1806, 277)], color=PURPLE, arrow="blue", dash="7 6")
-    s.rect(1070, 927, 766, 37, fill="#EAF7F5", stroke="#A8DCD3", rx=18, sw=1)
-    s.text(1453, 952, "副本由 K8s 跨 8 节点动态调度；图中不做固定 IP 绑定", 14, GREEN, 700, "middle")
 
     s.footer("微服务清单来源：普惠系统应用架构.pdf；“对账管理”的细分功能未在原图中展开。")
     return s
