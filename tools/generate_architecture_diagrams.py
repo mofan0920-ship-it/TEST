@@ -329,14 +329,9 @@ def diagram_3() -> SVG:
     for x in [312, 594, 876, 1158, 1494]:
         s.line(x + 4, 255, x + 26, 255)
 
-    # Boundary labels
-    s.pill(76, 340, 330, "已采购阿里云安全 / 网络服务", "#EAF7F5", GREEN)
-    s.pill(440, 340, 310, "K8s 与应用侧控制", "#E7F0FC", BLUE)
-    s.pill(784, 340, 310, "等保加固与审计项", "#FFF3D6", AMBER)
-
     # Three control columns
-    s.rect(62, 392, 552, 538, fill=WHITE, stroke="#A8DCD3", rx=20, sw=1.8)
-    s.text(90, 431, "边界安全", 22, GREEN, 700)
+    s.rect(62, 350, 552, 538, fill=WHITE, stroke="#A8DCD3", rx=20, sw=1.8)
+    s.text(90, 389, "边界安全", 22, GREEN, 700)
     boundary = [
         ("域名管理 / DNS", "解析入口统一管理，变更留痕", GREEN),
         ("DDoS 攻击防护", "清洗公网攻击流量，配置告警", RED),
@@ -345,10 +340,10 @@ def diagram_3() -> SVG:
         ("SLB 健康检查", "隔离异常后端，隐藏节点真实地址", BLUE),
     ]
     for i, (title, body, color) in enumerate(boundary):
-        s.card(88, 454 + i * 88, 500, 72, title, [body], color, 13)
+        s.card(88, 412 + i * 88, 500, 72, title, [body], color, 13)
 
-    s.rect(638, 392, 590, 538, fill=WHITE, stroke="#A7C7EB", rx=20, sw=1.8)
-    s.text(666, 431, "平台与应用安全", 22, BLUE, 700)
+    s.rect(638, 350, 590, 538, fill=WHITE, stroke="#A7C7EB", rx=20, sw=1.8)
+    s.text(666, 389, "平台与应用安全", 22, BLUE, 700)
     platform = [
         ("身份与权限", "FAST / K8s RBAC；管理员最小权限"),
         ("工作负载隔离", "Namespace、NetworkPolicy、Pod 安全策略"),
@@ -357,10 +352,10 @@ def diagram_3() -> SVG:
         ("镜像与发布", "FAST 流水线准入、镜像扫描、版本可追溯"),
     ]
     for i, (title, body) in enumerate(platform):
-        s.card(664, 454 + i * 88, 538, 72, title, [body], BLUE if i < 3 else PURPLE, 13)
+        s.card(664, 412 + i * 88, 538, 72, title, [body], BLUE if i < 3 else PURPLE, 13)
 
-    s.rect(1252, 392, 604, 538, fill=WHITE, stroke="#F3C677", rx=20, sw=1.8)
-    s.text(1280, 431, "加密、审计与等保要求", 22, AMBER, 700)
+    s.rect(1252, 350, 604, 538, fill=WHITE, stroke="#F3C677", rx=20, sw=1.8)
+    s.text(1280, 389, "加密、审计与等保要求", 22, AMBER, 700)
     compliance = [
         ("传输加密", "公网 HTTPS/TLS；服务间加密按敏感级别启用"),
         ("存储加密", "OSS SSE / 数据库透明加密 / 密钥轮换"),
@@ -369,7 +364,7 @@ def diagram_3() -> SVG:
         ("持续合规", "漏洞修复、基线核查、账号复核、等保测评"),
     ]
     for i, (title, body) in enumerate(compliance):
-        s.card(1278, 454 + i * 88, 552, 72, title, [body], AMBER, 13)
+        s.card(1278, 412 + i * 88, 552, 72, title, [body], AMBER, 13)
 
     s.footer("图例：绿色=已知已采购能力；蓝/紫=平台控制；橙色=需结合等保级别与现网配置核验的加固项。")
     return s

@@ -37,77 +37,71 @@
 <line x1="880" y1="255" x2="902" y2="255" stroke="#1473E6" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
 <line x1="1162" y1="255" x2="1184" y2="255" stroke="#1473E6" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
 <line x1="1498" y1="255" x2="1520" y2="255" stroke="#1473E6" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
-<rect x="76" y="340" width="330" height="30" rx="15" fill="#EAF7F5" stroke="#EAF7F5" stroke-width="0"/>
-<text x="241.0" y="361" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#14866D">已采购阿里云安全 / 网络服务</text>
-<rect x="440" y="340" width="310" height="30" rx="15" fill="#E7F0FC" stroke="#E7F0FC" stroke-width="0"/>
-<text x="595.0" y="361" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#1473E6">K8s 与应用侧控制</text>
-<rect x="784" y="340" width="310" height="30" rx="15" fill="#FFF3D6" stroke="#FFF3D6" stroke-width="0"/>
-<text x="939.0" y="361" text-anchor="middle" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#D97706">等保加固与审计项</text>
-<rect x="62" y="392" width="552" height="538" rx="20" fill="#FFFFFF" stroke="#A8DCD3" stroke-width="1.8"/>
-<text x="90" y="431" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#14866D">边界安全</text>
-<rect x="88" y="454" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="88" y="454" width="7" height="72" rx="3.5" fill="#14866D"/>
-<text x="111" y="484" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">域名管理 / DNS</text>
-<text x="111" y="510" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">解析入口统一管理，变更留痕</tspan></text>
-<rect x="88" y="542" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="88" y="542" width="7" height="72" rx="3.5" fill="#D64545"/>
-<text x="111" y="572" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">DDoS 攻击防护</text>
-<text x="111" y="598" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">清洗公网攻击流量，配置告警</tspan></text>
-<rect x="88" y="630" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="88" y="630" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="111" y="660" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">Web 应用防火墙 WAF</text>
-<text x="111" y="686" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">规则防护、黑白名单、访问日志</tspan></text>
-<rect x="88" y="718" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="88" y="718" width="7" height="72" rx="3.5" fill="#1473E6"/>
-<text x="111" y="748" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">安全组 / NACL</text>
-<text x="111" y="774" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">VPC 边界防火墙，仅放通必要方向</tspan></text>
-<rect x="88" y="806" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="88" y="806" width="7" height="72" rx="3.5" fill="#1473E6"/>
-<text x="111" y="836" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">SLB 健康检查</text>
-<text x="111" y="862" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">隔离异常后端，隐藏节点真实地址</tspan></text>
-<rect x="638" y="392" width="590" height="538" rx="20" fill="#FFFFFF" stroke="#A7C7EB" stroke-width="1.8"/>
-<text x="666" y="431" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#1473E6">平台与应用安全</text>
-<rect x="664" y="454" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="664" y="454" width="7" height="72" rx="3.5" fill="#1473E6"/>
-<text x="687" y="484" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">身份与权限</text>
-<text x="687" y="510" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">FAST / K8s RBAC；管理员最小权限</tspan></text>
-<rect x="664" y="542" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="664" y="542" width="7" height="72" rx="3.5" fill="#1473E6"/>
-<text x="687" y="572" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">工作负载隔离</text>
-<text x="687" y="598" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">Namespace、NetworkPolicy、Pod 安全策略</tspan></text>
-<rect x="664" y="630" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="664" y="630" width="7" height="72" rx="3.5" fill="#1473E6"/>
-<text x="687" y="660" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">密钥与证书</text>
-<text x="687" y="686" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">K8s Secret；TLS 证书集中轮换</tspan></text>
-<rect x="664" y="718" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="664" y="718" width="7" height="72" rx="3.5" fill="#7656C9"/>
-<text x="687" y="748" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">应用防护</text>
-<text x="687" y="774" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">Gateway 鉴权；Sentinel 限流与熔断</tspan></text>
-<rect x="664" y="806" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="664" y="806" width="7" height="72" rx="3.5" fill="#7656C9"/>
-<text x="687" y="836" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">镜像与发布</text>
-<text x="687" y="862" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">FAST 流水线准入、镜像扫描、版本可追溯</tspan></text>
-<rect x="1252" y="392" width="604" height="538" rx="20" fill="#FFFFFF" stroke="#F3C677" stroke-width="1.8"/>
-<text x="1280" y="431" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#D97706">加密、审计与等保要求</text>
-<rect x="1278" y="454" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="1278" y="454" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="1301" y="484" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">传输加密</text>
-<text x="1301" y="510" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">公网 HTTPS/TLS；服务间加密按敏感级别启用</tspan></text>
-<rect x="1278" y="542" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="1278" y="542" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="1301" y="572" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">存储加密</text>
-<text x="1301" y="598" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">OSS SSE / 数据库透明加密 / 密钥轮换</tspan></text>
-<rect x="1278" y="630" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="1278" y="630" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="1301" y="660" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">日志审计</text>
-<text x="1301" y="686" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">WAF、SLB、K8s、应用、数据库日志统一留存</tspan></text>
-<rect x="1278" y="718" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="1278" y="718" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="1301" y="748" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">备份恢复</text>
-<text x="1301" y="774" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">数据库备份、OSS 版本化与恢复演练</tspan></text>
-<rect x="1278" y="806" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
-<rect x="1278" y="806" width="7" height="72" rx="3.5" fill="#D97706"/>
-<text x="1301" y="836" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">持续合规</text>
-<text x="1301" y="862" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">漏洞修复、基线核查、账号复核、等保测评</tspan></text>
+<rect x="62" y="350" width="552" height="538" rx="20" fill="#FFFFFF" stroke="#A8DCD3" stroke-width="1.8"/>
+<text x="90" y="389" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#14866D">边界安全</text>
+<rect x="88" y="412" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="88" y="412" width="7" height="72" rx="3.5" fill="#14866D"/>
+<text x="111" y="442" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">域名管理 / DNS</text>
+<text x="111" y="468" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">解析入口统一管理，变更留痕</tspan></text>
+<rect x="88" y="500" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="88" y="500" width="7" height="72" rx="3.5" fill="#D64545"/>
+<text x="111" y="530" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">DDoS 攻击防护</text>
+<text x="111" y="556" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">清洗公网攻击流量，配置告警</tspan></text>
+<rect x="88" y="588" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="88" y="588" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="111" y="618" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">Web 应用防火墙 WAF</text>
+<text x="111" y="644" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">规则防护、黑白名单、访问日志</tspan></text>
+<rect x="88" y="676" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="88" y="676" width="7" height="72" rx="3.5" fill="#1473E6"/>
+<text x="111" y="706" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">安全组 / NACL</text>
+<text x="111" y="732" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">VPC 边界防火墙，仅放通必要方向</tspan></text>
+<rect x="88" y="764" width="500" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="88" y="764" width="7" height="72" rx="3.5" fill="#1473E6"/>
+<text x="111" y="794" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">SLB 健康检查</text>
+<text x="111" y="820" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="111" dy="0">隔离异常后端，隐藏节点真实地址</tspan></text>
+<rect x="638" y="350" width="590" height="538" rx="20" fill="#FFFFFF" stroke="#A7C7EB" stroke-width="1.8"/>
+<text x="666" y="389" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#1473E6">平台与应用安全</text>
+<rect x="664" y="412" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="664" y="412" width="7" height="72" rx="3.5" fill="#1473E6"/>
+<text x="687" y="442" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">身份与权限</text>
+<text x="687" y="468" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">FAST / K8s RBAC；管理员最小权限</tspan></text>
+<rect x="664" y="500" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="664" y="500" width="7" height="72" rx="3.5" fill="#1473E6"/>
+<text x="687" y="530" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">工作负载隔离</text>
+<text x="687" y="556" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">Namespace、NetworkPolicy、Pod 安全策略</tspan></text>
+<rect x="664" y="588" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="664" y="588" width="7" height="72" rx="3.5" fill="#1473E6"/>
+<text x="687" y="618" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">密钥与证书</text>
+<text x="687" y="644" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">K8s Secret；TLS 证书集中轮换</tspan></text>
+<rect x="664" y="676" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="664" y="676" width="7" height="72" rx="3.5" fill="#7656C9"/>
+<text x="687" y="706" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">应用防护</text>
+<text x="687" y="732" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">Gateway 鉴权；Sentinel 限流与熔断</tspan></text>
+<rect x="664" y="764" width="538" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="664" y="764" width="7" height="72" rx="3.5" fill="#7656C9"/>
+<text x="687" y="794" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">镜像与发布</text>
+<text x="687" y="820" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="687" dy="0">FAST 流水线准入、镜像扫描、版本可追溯</tspan></text>
+<rect x="1252" y="350" width="604" height="538" rx="20" fill="#FFFFFF" stroke="#F3C677" stroke-width="1.8"/>
+<text x="1280" y="389" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#D97706">加密、审计与等保要求</text>
+<rect x="1278" y="412" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="1278" y="412" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="1301" y="442" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">传输加密</text>
+<text x="1301" y="468" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">公网 HTTPS/TLS；服务间加密按敏感级别启用</tspan></text>
+<rect x="1278" y="500" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="1278" y="500" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="1301" y="530" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">存储加密</text>
+<text x="1301" y="556" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">OSS SSE / 数据库透明加密 / 密钥轮换</tspan></text>
+<rect x="1278" y="588" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="1278" y="588" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="1301" y="618" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">日志审计</text>
+<text x="1301" y="644" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">WAF、SLB、K8s、应用、数据库日志统一留存</tspan></text>
+<rect x="1278" y="676" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="1278" y="676" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="1301" y="706" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">备份恢复</text>
+<text x="1301" y="732" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">数据库备份、OSS 版本化与恢复演练</tspan></text>
+<rect x="1278" y="764" width="552" height="72" rx="13" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="1.2" filter="url(#shadow)"/>
+<rect x="1278" y="764" width="7" height="72" rx="3.5" fill="#D97706"/>
+<text x="1301" y="794" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#102A43">持续合规</text>
+<text x="1301" y="820" text-anchor="start" font-family="'WenQuanYi Micro Hei','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#627D98"><tspan x="1301" dy="0">漏洞修复、基线核查、账号复核、等保测评</tspan></text>
 </g>
 </svg>
